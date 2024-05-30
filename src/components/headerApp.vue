@@ -4,7 +4,7 @@
             <div class="row-header">
 
                 <div class="header-left">
-                    a<span>Donna</span>
+                    <span>Donna</span>
                     <span>Uomo</span>
                     <span>Bambini</span>
                 </div>
