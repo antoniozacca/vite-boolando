@@ -35,17 +35,13 @@ export default {
       <div class="row">
         <div>
           <ul class="d-flex">
-            <li class="card position-relative" v-for="product in discountedProducts" :key="product.id">
-              <img class="d-block" :src="product.frontImage" alt="">
-              <img class="d-none" :src="product.backImage" alt="">
-              <div class="position-span">
-                <span>sconto</span>
-                <span>sostenibilità</span>
-              </div>
-              <p>{{ product.brand }}</p>
-              <h2>{{ product.name }}</h2>
-              <span class="text-sold">{{ product.discountedPrice }} €</span>
-              <span class="line-through">{{ product.price }} €</span>
+            <li class="card " v-for="product in discountedProducts" :key="product.id">
+                <img class="d-block" :src="product.frontImage" alt="">
+                <img class="d-none" :src="product.backImage" alt="">
+                <p>{{ product.brand }}</p>
+                <h2>{{ product.name }}</h2>
+                <span class="text-sold">{{ product.discountedPrice }} €</span>
+                <span class="line-through">{{ product.price }} €</span>
             </li>
           </ul>
         </div>
@@ -70,7 +66,6 @@ export default {
   }
   img{
     width: 100%;
-    position: absolute;
   }
   .d-flex{
     display: flex;
@@ -95,13 +90,5 @@ export default {
     color: red;
     font-weight: bold;
     padding-right: 10px;
-  }
-  .position-relative{
-    position: relative;
-  }
-  .position-span{
-    position: absolute;
-    top: 0;
-    display: flex;
   }
 </style>
