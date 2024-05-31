@@ -1,6 +1,6 @@
 <script>
     export default {
-    name: "mains",
+    name: "main",
 };
 </script>
 <template>
