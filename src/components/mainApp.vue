@@ -1,12 +1,9 @@
 <script>
     export default {
-    name: "mains"
+    name: "mains",
 };
 </script>
 <template>
 </template>
 <style scoped>
-p{
-    
-}
 </style>

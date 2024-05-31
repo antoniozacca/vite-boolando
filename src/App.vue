@@ -7,7 +7,6 @@ import productsData from './db.json/db.json'
     components: {
       headers,
       mains,
-      productsData
     },
 
 }
@@ -20,7 +19,7 @@ import productsData from './db.json/db.json'
   <headers></headers>
   <mains class="mains">
     <ul>
-      <li v-for="product in products" :key="product.id">
+      <li v-for="product in productsData" :key="product.id">
         <img :src="product.frontImage" alt="">
         <h3>{{ product.brand }}</h3>
         <h3>{{ product.name }}</h3>
